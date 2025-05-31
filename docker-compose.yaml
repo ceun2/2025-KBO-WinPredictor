@@ -1,0 +1,10 @@
+
+services:
+  kbo-dev:
+    build: . # 현재 디렉토리의 Dockerfile 사용
+    ports:
+      - "8888:8888"
+    container_name: kbo-dev
+    volumes:
+      - .:/src
+    restart: no
